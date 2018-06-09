@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:weightSum="5"
+    android:padding="5dp"
+    android:orientation="horizontal"
+    tools:ignore="HardcodedText, RtlHardcoded">
+
+    <ImageView
+        android:id="@+id/row_imgContact"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="60dp"/>
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                android:singleLine="true"
+                android:gravity="center"
+                android:id="@+id/row_tvFname"
+                android:text="FirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:id="@+id/row_tvLname"
+                android:layout_marginLeft="5dp"
+                android:text="LastName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/row_tvPhoneNumber"
+            android:gravity="center_vertical"
+            android:text="111-111-00001"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
